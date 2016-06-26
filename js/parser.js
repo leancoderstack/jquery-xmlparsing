@@ -6,7 +6,7 @@ $(document).ready(function () {
         success: function (xml) {
             $(xml).find('people>name').each(function (index) {
                 var html = '<p>' + $(this).text() + '</p>';
-                console.log(html);
+                
                 if (index == 0) {
                     $('#people').html(html);
                 }
